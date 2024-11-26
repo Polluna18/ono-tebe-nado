@@ -1,1 +1,237 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  font-weight: normal;
+  font-size: 18px;
+  text-underline-position: under;
+  letter-spacing: 0.15px;
+  height: 293px;
+  padding: 92px 24px 96px 24px;
+}
+.header__links-list {
+  display: flex;
+  gap: 12px;
+  list-style: circle;
+  justify-content: space-evenly;
+  width: 438px;
+}
+.header__links-list-item_no-bullet {
+  justify-self: start;
+  list-style: none;
+}
+.header-adress {
+  justify-self: right;
+  width: 267px;
+}
+.adress-list {
+  list-style: none;
+  line-height: 24.3px;
+}
+.cover {
+  position: relative;
+  min-height: 757px;
+  margin-bottom: 179px;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  background-color: rgb(0 0 0 / 0.6);
+  z-index: -2;
+  inset: 0;
+}
+.cover-title {
+  font-weight: bold;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: white;
+  padding: 165px 50px 147px 50px;
+  letter-spacing: 0.3em;
+}
+.aligned-text {
+  display: block;
+  margin-bottom: 20px;
+}
+.aligned-text-center {
+  text-align: center;
+  line-height: 1;
+}
+.aligned-text-right {
+  text-align: right;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.letter-spasing-extended {
+  letter-spacing: 0.6em;
+}
+.letter-spacing-none {
+  letter-spacing: 0em;
+}
+.cover-subline {
+  display: block;
+  position: absolute;
+  inset: 667px 385px 62px 78px;
+  font-weight: normal;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: justify;
+  word-spacing: 18px;
+}
+.button {
+  display: block;
+  position: absolute;
+  inset: 655px 50px 51px 794px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: white;
+  border-color: white;
+  background-color: transparent;
+}
+.lots {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  min-height: 692px;
+  margin-bottom: 146px;
+  padding: 0 24px;
+  flex-grow: 1;
+  gap: 25px;
+}
+.lots-title {
+  display: block;
+  position: absolute;
+  inset: 0 891px 645px 40px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 334px;
+  height: 563px;
+  justify-content: space-between;
+  margin: 74px auto 55px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: center;
+  padding: 51px 40px 48px 40px;
+  line-height: 1.2;
+  text-underline-position: under;
+}
+.film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+.book {
+  background-image: url("../images/card-lot-02.jpg");
+}
+.painting {
+  background-image: url("../images/card-lot-03.jpg");
+}
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+.card-text {
+  font-size: 20px;
+  font-weight: regular;
+  color: white;
+}
+.see-more {
+  position: absolute;
+  inset: 667px 820px 2px 40px;
+  font-size: 20px;
+  font-weight: normal;
+  text-underline-position: under;
+  text-align: center;
+}
+.about {
+  display: block;
+  min-height: 595px;
+  margin-bottom: 180px;
+  padding: 0 24px;
+}
+.about-column {
+  display: grid;
+  min-height: 563px;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: 275px 1fr 24px 1.33fr;
+  column-gap: 25px;
+}
+.logo-about {
+  position: absolute;
+  inset: 64px 45.52px 62px 46.48px;
+  width: 148px;
+  height: 114px;
+}
+.background-logo-about {
+  position: relative;
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  align-self: end;
+  justify-self: center;
+}
+.about-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: center;
+  padding-top: 44px;
+}
+.text {
+  grid-column: 2;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+}
+.first-paragraph {
+  align-self: end;
+}
+.second-paragraph {
+  grid-row: 4;
+}
+.footer {
+  display: grid;
+  min-height: 98px;
+  margin: 0 50px 88px 50px;
+  grid-template-columns: 1fr 149px 1fr;
+  font-size: 18px;
+  font-weight: normal;
+  text-underline-position: under;
+}
+.footer-adress {
+  justify-self: left;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-links-list {
+  list-style: none;
+}
+
+.contacts {
+  display: flex;
+  padding-left: 185px;
+  justify-content: space-between;
+}
+.link {
+  width: 48px;
+  height: 48px;
+}
